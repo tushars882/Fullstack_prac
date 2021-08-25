@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+    <style>
+        *{
+            background-color: silver;
+        }
+        .navigation img{
+            /* we have used this to fit the content */
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation" >
+        <img src="navbar_pract_FS.png" alt="No image" srcset="" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rectangle" coords="47,47,135,68" href="" alt="">
+            <area shape="rectangle" coords="225,46,445,71" href="https://tushar882.github.io/Fullstack_prac/" alt="">
+            <area shape="rectangle" coords="535,45,752,71" href="https://tushar882.github.io/Fullstack_prac/" alt="">
+            <area shape="rectangle" coords="847,35,1077,71" href="https://tushar882.github.io/Fullstack_prac/" alt="">
+            <area shape="rectangle" coords="1170,44,1400,79" href="https://tushar882.github.io/Fullstack_prac/" alt="">
+            <area shape="rectangle" coords="1481,43,1706,74" href="https://tushar882.github.io/Fullstack_prac/" alt="">
+        </map>
+    </div>
+    <div class="container">
+        <p><h2>Introduction to Front-end technologies</h2></p>     
+    </div>
+    <div class="container">
+        <img src="pract_5.png" alt="No image" usemap="#workmap2">
+        <map name="workmap2">
+            <area shape="square" coords="24,5,145,131" href="http://html.com" alt="" target="_blank">
+            <area shape="circle" coords="187,23,292,122" href="https://www.w3schools.com/css/" alt=""target="_blank">
+            <area shape="square" coords="29,160,144,272" href="https://www.w3schools.com/js/" alt=""target="_blank">
+            <area shape="square" coords="188,163,281,257" href="https://getbootstrap.com/" alt="" target="_blank">
+        </map>    
+    
+    </div>
+    <div class="container">
+        <p style="color: red;">click on any of these to know more about them</p>
+    </div>
+    
+
+    
+</body>
+</html>
