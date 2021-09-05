@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .head{
+            background-color: silver;
+            height: 52px;
+            
+        }
+        .head header{
+            text-align: center;
+            color: snow;
+            line-height: 52px;  
+            /* use line height for block level elements (very useful) with text align center */
+
+        }
+        .banner{
+            height: 100vh;
+            /* to get the occupancy of full page */
+            background-color: turquoise;
+            margin-top: 4px;
+            
+        }
+       
+       
+        
+         .dot {
+                height: 222px;
+                width: 222px;
+                background-color: yellowgreen;
+                border-radius: 50%;
+                display: inline-block;
+                gap: 10px;
+                margin-left: 100px;
+                margin-right: 40px;
+         }
+         .section-2{
+             display: flex;
+             margin-top: 5px;
+         }
+         .square{
+             background-color: grey;
+             height: 500px;
+             width: 50%;
+             text-align: center;
+            color: white;
+             /* line-height: 500px; */
+
+         } 
+         .articles{
+             margin-left: 5px;
+             width: 50%;
+             text-align: center;
+         }
+             
+         
+         .article1{
+             background-color: tomato;
+             height: 165px;
+             text-align: center;
+             /* line-height: 165px; */
+
+         }
+         .article2{
+             background-color: lightskyblue;
+             margin-top: 5px;
+             height: 165px;
+             text-align: center;
+             /* line-height: 165px; */
+         }
+         .article3{
+            background-color: goldenrod;
+             margin-top: 5px;
+             height: 160px;
+             text-align: center;
+             /* line-height: 160px; */
+
+         }
+         .section3{
+                height: 222px;
+                width: 222px;
+                background-color: wheat;
+                /* border-radius: 50%; */
+                display: inline-block;
+                gap: 10px;
+                margin-left: 100px;
+                margin-right: 40px;
+                margin-top: 5px;
+         }
+
+         .footer{
+             width: 100%;
+             background-color: pink;
+             line-height: 35px;
+             text-align: center;
+             height: 4.5rem;
+         }
+         .section-4 h1{
+             margin-top: 10px;
+             margin-bottom: 10px;
+         }
+
+
+
+         .navigation img{
+            /* we have used this to fit the content */
+            height: 100%;
+            width: 100%;
+        }
+        .navbar ul{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            text-decoration: none;
+            padding: 0.7rem;
+            justify-content: center;
+            /* list-style-type: none; */
+            
+        }
+        .navbar  li{
+            list-style-type: none;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            
+            
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+            
+        }
+        .navbar ul li a:hover{
+            background-color: turquoise;
+        }
+        .banner img{
+            height: 100%;
+            width: 100%;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------------------------- */
+        .container{
+            border: 2px solid white;
+            display: inline-block;
+            width: 23%;
+            margin: 8px;
+            border-radius: 13px;
+            background-color:silver;
+            box-shadow: 3px 3px grey;
+            margin-top: 2rem;
+        }
+        .htmlimage img{
+            width: 311px;
+            padding: 18px;
+            margin-top: 2px;
+            border-radius: 28px;
+        }
+        .container h3{
+            text-align: center;
+        }
+        .container p{
+            padding: 7px 7px;
+        }
+            
+        
+        .btn a{
+            text-align: center;
+            text-decoration: none;
+        }        
+        
+        .btn{
+            align-items: center;
+            /* display: block; */
+            display: grid;
+            width: 230px;
+            margin-left: 25px;
+            margin: auto;
+            padding-bottom: 10px;
+                    
+             }
+        .heading h1{
+            color: white;
+            text-align: center;
+        }
+          button:hover{
+            background-color: red;
+        }
+        /* ---------------------------------------------------------------------- */
+       
+
+    
+       
+        
+
+
+         
+         
+
+         
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+
+        <div class="navbar" style="position: fixed; width: 100%;background-color: silver;">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#team" style="scroll-behavior: smooth;">Team</a></li>
+              <li><a href="#technologies" style="scroll-behavior: smooth;">Technologies</a></li>
+              <li><a href="#contact" style="scroll-behavior: smooth;">Contact</a></li>
+
+            </ul>
+        </div>
+       
+    </div>
+    <div class="banner">
+        <img src="pract_8.jpg" alt="no image" srcset="">
+        
+    </div>
+
+   
+    
+    <div style="text-align:center" id="team">
+        <h1>Team members</h1>
+        <span class="dot"><img src="pract_8_B.jpg" alt="" style="border-radius: 10rem;"></span>
+        <span class="dot"><img src="pract_8_M.jpg" alt=""style="border-radius: 10rem;"></span>
+        <span class="dot"><img src="pract_8_br.jpg" alt="" style="border-radius: 10rem;"></span>
+        <span class="dot"><img src="pract_8_ein.jpg" alt="" style="border-radius: 10rem;"></span>
+      </div>
+
+
+      <div class="section-2">
+          <div class="square">
+             <h1 style="margin-top: 5px; font-family: cursive; margin-bottom: 10px;">About project</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quos quis nulla natus voluptate voluptatum excepturi officia deleniti corrupti ipsam exercitationem voluptas sapiente, dolorum eligendi perferendis obcaecati explicabo sequi cupiditate cum totam dicta labore magnam accusamus veritatis. Odit qui quidem soluta, consequatur ab iste quis voluptas quaerat? Odio saepe quasi nihil! Dolore tempore unde optio at laboriosam vel perferendis aut deserunt, aliquam ducimus voluptatibus temporibus, ipsa recusandae aperiam sit. Perspiciatis natus dolor rem nisi in tempore maiores illum ipsum debitis minima provident autem non, dolores cumque, est unde sequi repellat nihil. Repellat totam id tempora minima alias corporis quod repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt optio soluta cupiditate, debitis impedit molestiae distinctio et eaque harum minus obcaecati vero laudantium illum. Inventore unde perspiciatis nisi fuga ipsa amet quis dignissimos exercitationem dicta ex incidunt aliquam est atque ab delectus, illo ipsam cumque sed? Minima rerum quam laboriosam consequuntur eligendi, sapiente ab! Magnam, cumque, exercitationem aspernatur culpa deserunt ratione sint officiis dolorum repudiandae distinctio molestiae fugit placeat! Aliquid nulla minima libero. Non, placeat. Ad reprehenderit blanditiis voluptatem minima dolor sed magnam magni minus qui sunt fugit quisquam vero incidunt ullam deserunt, molestiae, nemo consequuntur, corporis tempora facilis.</p>
+          </div>
+          <div class="articles">
+              <div class="article1"><h2>project-1</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab aliquid, odio vero quaerat amet adipisci a aperiam ipsum sunt exercitationem sed sequi harum architecto. Optio molestias sunt fugit laborum dolores officia nobis harum?</span></div>
+              <div class="article2"><h2>project-2</h2><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima fugiat nisi dolorum fugit expedita voluptates dolorem. Eligendi nam quam perspiciatis, dolore praesentium porro cum mollitia? Sapiente, sint! Vitae maxime quasi, eius atque voluptatem corrupti exercitationem inventore necessitatibus aliquam odit obcaecati quo autem aliquid ut.</span></div>
+              <div class="article3"><h2>project-3</h2><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatum velit libero porro, totam cumque nam iste expedita. Quisquam quia eius dicta ipsam, aliquid animi magni consectetur laboriosam ea possimus quod, hic incidunt iusto ducimus iure maiores earum veniam dolorem corrupti. Eos sunt iusto veniam.</span></div>
+          </div>
+      </div>
+      <!-- ------------------------------------------------------------------------------------------------------------- -->
+      
+
+      <div style="text-align:center" id="technologies">
+        <h1>Technologies used</h1>
+        <!-- <span class="section3"></span>
+        <span class="section3"></span>
+        <span class="section3"></span>
+        <span class="section3"></span> -->
+        <div class="container">
+            <div class="htmlimage">
+                <img src="pract-6_html.jpg" alt="No image">
+            </div>
+            <h3>Introduction to html</h3>
+            <p id="abouthtml">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil repellat nostrum illum libero recusandae deserunt animi deleniti maiores dolorum sita <span id= readmore></span> reiciendis obcaecati, porro illo! Quis aspernatur blanditiis, cumque voluptate fuga nemo ea voluptatibus!</p>
+             <div class="btn">
+                 <button> <a href="http://www.'html.com">read more</a></button>
+             </div>
+         </div>
+     
+     
+        <div class="container">
+        
+            <div class="htmlimage">
+                <img src="pract-6_jq.jpg" alt="No image">
+            </div>
+            <h3>Introduction to html</h3>
+            <p id="abouthtml">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil repellat nostrum illum libero recusandae deserunt animi deleniti maiores dolorum sita <span id= readmore></span> reiciendis obcaecati, porro illo! Quis aspernatur blanditiis, cumque voluptate fuga nemo ea voluptatibus!</p>
+            <div class="btn">
+             <button> <a href="https://jquery.com/">read more</a></button>
+         </div>
+         </div>
+     
+     
+        <div class="container">
+         
+            <div class="htmlimage">
+                <img src="pract-6_css .jpg" alt="No image">
+            </div>
+            <h3>Introduction to html</h3>
+            <p id="abouthtml">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil repellat nostrum illum libero recusandae deserunt animi deleniti maiores dolorum sita <span id= readmore></span> reiciendis obcaecati, porro illo! Quis aspernatur blanditiis, cumque voluptate fuga nemo ea voluptatibus!</p>
+            <div class="btn">
+             <button> <a href="https://www.w3schools.com/css/">read more</a></button>
+         </div>
+         </div>
+     
+     
+        <div class="container">
+         
+            <div class="htmlimage">
+                <img src="pract-6_bts.jpg" alt="No image">
+            </div>
+            <h3>Introduction to html</h3>
+            <p id="abouthtml">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil repellat nostrum illum libero recusandae deserunt animi deleniti maiores dolorum sita <span id= readmore></span> reiciendis obcaecati, porro illo! Quis aspernatur blanditiis, cumque voluptate fuga nemo ea voluptatibus!</p>
+            <div class="btn">
+             <button> <a href="https://www.w3schools.com/bootstrap4/">read more</a></button>
+         </div>
+      </div>
+        <!------------------------------------------------------------------------------------------------------------------------  -->
+      
+      
+      <div class="section-4" style="text-align: center; margin-top: 2rem;" id="contact">
+        <h1>Contact Us</h1>
+          <div class="footer">
+              <h5>website template for practical-8 &copy;  <a href="betalabs.com">Beta labs</a></h5>
+              <p><a href="#top">Back to top</a></p>
+          </div>
+      </div>
+</body>
+</html>
